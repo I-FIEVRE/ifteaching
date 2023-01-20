@@ -29,54 +29,67 @@
             </section> 
             <img class="card2-project" src="images/rsz_img_20160609_115645.png" alt="students with laptop">           
             <div class="button1">
-                <button type="button" onclick="toggle_text('span_txt1');"><strong>2002 High School</strong><br>Immigrant Students
+                <button class="tablinks" type="button" onclick="openSchool(event, 'highschool')"><strong>2002 High School</strong><br>Immigrant Students
                 </button>
             </div>
             <div class="span1">
-                <span id="span_txt1" style="display:none;"><strong>2002 - High School</strong><br><br>I was part of a very good local Initiative Project for a group of 18 young people aged 16 to 18 newcomers in France from various places in the world (Asia, Africa, Eastern Europe, Islands). The young people were, for the most part, lost in their new environment and extremely shy. They didn't know how to speak in public. I created a course and workshops with computers and the internet. I also organized tasks to be performed outside: They worked like a team. The results were that the confidence of these amazing young people has increased as well as their ability to communicate and work alone and in a team. The same applies to their autonomy. Around 75% obtained their practical internships through personal research. The result was superior to all other groups followed by the same association. All the young people who chose to stay in France (i.e. 16 out of 18) received a positive orientation which corresponded to their abilities for the next school year.
+                <span class="tabcontent" id="highschool" id="span_txt1"><strong>2002 - High School</strong><br><br>I was part of a very good local Initiative Project for a group of 18 young people aged 16 to 18 newcomers in France from various places in the world (Asia, Africa, Eastern Europe, Islands). The young people were, for the most part, lost in their new environment and extremely shy. They didn't know how to speak in public. I created a course and workshops with computers and the internet. I also organized tasks to be performed outside: They worked like a team. The results were that the confidence of these amazing young people has increased as well as their ability to communicate and work alone and in a team. The same applies to their autonomy. Around 75% obtained their practical internships through personal research. The result was superior to all other groups followed by the same association. All the young people who chose to stay in France (i.e. 16 out of 18) received a positive orientation which corresponded to their abilities for the next school year.
                 </span>
             </div>               
             <div class="button2">
-                <button type="button" onclick="toggle_text('span_txt2');"><strong>2005 Individual</strong><br>Student without Self-confidence
+                <button class="tablinks" type="button" onclick="openSchool(event, 'individual')"><strong>2005 Individual</strong><br>Self-confidence
                 </button>
             </div>
             <div class="span2">
-                <span id="span_txt2" style="display:none;"> 
+                <span class="tabcontent" id="individual" id="span_txt2"> 
                     <strong>2005 - Individual</strong><br><br>I followed with great pleasure a teenage girl during 2 years of middle school with a big lack of understanding in mathematics. As a result, she lost self-confidence and the desire to work in general. I gave her lessons focusing on analysis and algebra in view of her desire for school orientation. I created and developed a visual working method and worked from the simplest to the most complex. I also accompanied her in her professional project through her school project. The results were that her grades improved to excellence in some areas. She regained her confidence. She worked harder and progressed in other subjects. She realized her wish for school orientation: she successfully obtained her BEP in sales and then continued with a professional baccalaureate where she also obtained good results, and, finally, she went on to college.
                 </span>
             </div>
             <div class="button3">
-                <button type="button" onclick="toggle_text('span_txt3');">
+                <button class="tablinks" type="button" onclick="openSchool(event, 'middleschool1')">
                     <strong>2015 Middle School</strong><br>Specific Needs Students
                 </button>
             </div>    
             <div class="span3">
-                <span id="span_txt3" style="display:none;"> 
+                <span class="tabcontent" id="middleschool1" id="span_txt3" > 
                     <strong>2015 - Middle School</strong><br><br>During the time I worked at LFI Jean Giono, I had the wonderful opportunity to teach 2 first year middle school classes in math and technology. Using the computer tool in almost all the courses, I could individualize the knowledge paths as well as allow a large team work to carry out projects.
                     During this school year, I had the great opportunity to work in partnership with the family of a student who had had an birth intellectually disabling cerebral accident. In my classes, I also had an asperger student, several high potential students, and students with academic difficulties ... Creating interesting projects and meeting their needs while also letting them work independently generated a climate of class extremely positive and benevolent. All the students were able to give the best of themselves and be satisfied both with their work and rejoice in the performance of others.
                     For example, the young Asperger was able to show the whole class his growing sketchup skills. Similarly, young girls have performed well at the national level in the computer competition "Castor Informatique".
                 </span> 
             </div>
             <div class="button4">
-                <button type="button" onclick="toggle_text('span_txt4');"><strong>2018 Middle School</strong><br>Students with "dys" disorders
+                <button class="tablinks" type="button" onclick="openSchool(event, 'middleschool2')"><strong>2018 Middle School</strong><br>Students with "dys" disorders
                 </button>
             </div>    
             <div class="span4">
-                <span id="span_txt4" style="display:none;"><strong>2018 - Middle School</strong><br><br>
+                <span class="tabcontent" id="middleschool2" id="span_txt4" ><strong>2018 - Middle School</strong><br><br>
                     I created, implemented and animated adapted teaching and learning programs for a little group of middle school students presenting multi-dys disorders.It was a great experience of learning and of doing. I also worked within a multidisciplinary team.
                     In addition, inside my teenage class, I created a specific teaching for a nice 12 years boy with no background in numeracy. He couldn't add (either to understand the meaning of a number) and so on. He was unable to pay attention and work alone at first too. I worked as a team with the speech therapist and used a Montessori pedagogical approach as well.
                     The results were that the youth got the basics in math and started working independently using a laptop. He also was well integrated within the class and participated well in team activities.
                 </span> 
             </div>   
             <script>
-              function toggle_text(id) {
-                var span = document.getElementById(id);
-                if(span.style.display == "none") {
-                  span.style.display = "inline";
-                } else {
-                  span.style.display = "none";
+                function openSchool(evt, schoolName) {
+                    // Declare all variables
+                    var i, tabcontent, tablinks;
+                
+                    // Get all elements with class="tabcontent" and hide them
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                    }
+                
+                    // Get all elements with class="tablinks" and remove the class "active"
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+                
+                    // Show the current tab, and add an "active" class to the button that opened the tab
+                    document.getElementById(schoolName).style.display = "block";
+                    evt.currentTarget.className += " active";
                 }
-              }  
+
             </script> 
         </main>
         <div style="text-align:center">
