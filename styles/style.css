@@ -240,14 +240,14 @@ button:hover {
   }
 
 
-  .span1, .span2, .span3, .span4 {
+  .highschool, .middleschool1, .middleschool2, .individual {
     text-align: left;
     margin-top: 80px;
     grid-column: 3/11; 
     grid-row: 4/6;
   }
 
-  .span1, .span2, .span3, .span4 {
+  .highschool, .middleschool1, .middleschool2, .individual {
     padding: 20px;
     color: #fcfbfb;
     overflow: auto;
