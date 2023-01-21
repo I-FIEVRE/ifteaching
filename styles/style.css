@@ -510,12 +510,22 @@ button:hover {
       margin-top: 10px;
     }
 
+    .card-origins:hover {
+      transform: scale(1.5);
+      box-shadow: none;
+      border: none;
+    }
+
     .button1, .button2, .button3, .button4, .span1, .span2, .span3, .span4 {
       align-self: center;
       margin: 10px;
       margin-left: 10%;
     }
 
+    .button11:hover, .button22:hover, .button44:hover {
+      transform: scale(1.2);
+    }
+    
 
     .card-button {
       width: 80%;
