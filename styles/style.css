@@ -304,42 +304,6 @@ button:hover {
   }
 
 
-
-/* Style the tab */
-/*
-.tab {
-  overflow: hidden;
-  border: 1px solid #696969;
-  background-color: #444444;
-}
-
-
-/* Style the buttons that are used to open the tab content */
-/*
-.tab button {  
-  color: #f1f1f1;
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-}
-
-/* Change background color of buttons on hover */
-/*
-.tab button:hover {
-  background-color: #444444;
-  color: black;
-}
-
-/* Create an active/current tablink class */
-
-.tab button.active {
-  background-color: #696969;
-}
-
 /* Style the tab content */
 .tabcontent {
   color: #f1f1f1;
@@ -464,7 +428,7 @@ button:hover {
   text-align: left;
   margin-top: 100px;
   grid-column: 2/9;
-  grid-row: 5/6; 
+  grid-row: 5/7; 
 }
 
 .span11, .span22, .span44 {

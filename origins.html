@@ -30,49 +30,62 @@
             </div> 
             <img class="card-origins" src="images/genealogy.png" alt="part of my genealogy">
             <div class="button22">
-                <button type="button" onclick="toggle_text('span_txt22');">
+                <button class="tablinks" onclick="openQuality(event, 'service')" >
                     <img class="card-button" src="images/mother.png" alt="my mother">
                 </button>
             </div>
             <div class="span22">
-                <span id="span_txt22" style="display:none;"> 
+                <span class="tabcontent" id="service"> 
                     <strong>Service and Creativity</strong><br><br>
                     My mother was a nurse’s aide and worked with sick children in the hospital HRS in Giens when she was a young adult. She sewed, knitted, and embroidered and teached me to do the same. I learned crocheting too. I had the occasion to serve others all my life. For example, when I was a young adult, I crocheted toys for babies in a hospital and blankets for babies from families in need. My mother has a big sense of creativity and she transmitted it to me too. I apply it not only when I do handcrafts but also when I create a project. 
                 </span> 
             </div>
             <div class="button11">
-                <button type="button" onclick="toggle_text('span_txt11');">
+                <button class="tablinks" onclick="openQuality(event, 'adaptation')">
                     <img class="card-button" src="images/rsz_les_alpes.png" alt="the Alpes">
                 </button>
             </div>
             <div class="span11">
-                <span id="span_txt11" style="display:none;">
+                <span class="tabcontent" id="adaptation" >
                     <strong>Adaptation</strong><br><br>
                     My second great-father, Jean Baptiste Galliano, came from Piedmont, Italy with his parents to live in France. After having moved several times in my life, I came to live in Piedmont, 10 years ago. I see the mountains every day from my window and  I remember the life adaptations that my mother ancestors had to make, including her. From my father's side, my great-mother, Valentine, was a child of public assistance. She also had to adapt a lot throughout her life as a child as well as a woman. During my life, I learned to adapt to situations and my environment. In Particular, I met people from all over the world and I have worked with people with different ways of thinking and acting.  
                 </span>
             </div>               
             <div class="button44">
-                <button type="button" onclick="toggle_text('span_txt44');">
+                <button class="tablinks" onclick="openQuality(event, 'self_learn')">
                     <img class="card-button" src="images/my-father-with-me.png" alt="my father with me">
                 </button>
             </div>    
             <div class="span44">
-                <span id="span_txt44" style="display:none;"> 
+                <span class="tabcontent"  id="self_learn"> 
                     <strong>Self Learn</strong><br><br>
                     My father's mother, Valentine, had to learn a lot in her life as mother of numerous children. She also learned to drive when she was already of an advanced age to make life more joyful for her husband who suffered from a big physical handicap after a heavy accident at work. 
                     I have spent my whole life learning whether in person at school and university, in books, or online. I like to increase my skills to be successful in all my activities.
                 </span> 
             </div>   
             <script>
-              function toggle_text(id) {
-                var span = document.getElementById(id);
-                if(span.style.display == "none") {
-                  span.style.display = "inline";
-                } else {
-                  span.style.display = "none";
+                function openQuality(evt, qualityName) {
+                    // Declare all variables
+                    var i, tabcontent, tablinks;
+                
+                    // Get all elements with class="tabcontent" and hide them
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                    }
+                
+                    // Get all elements with class="tablinks" and remove the class "active"
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+                
+                    // Show the current tab, and add an "active" class to the button that opened the tab
+                    document.getElementById(qualityName).style.display = "block";
+                    evt.currentTarget.className += " active";
                 }
-              }  
-            </script>               
+
+            </script>           
         </main>
         <div style="text-align:center">
             <span class="dot"></span>
