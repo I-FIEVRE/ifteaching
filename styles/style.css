@@ -53,6 +53,23 @@ nav a:hover {
     font-weight: bold;
 }
 
+.langue {
+  color: #f1f1f1;
+  font-size: large;
+  padding: 5px;
+  margin: 5px;
+  justify-self: center;
+  align-self: center;
+}
+
+.langue:hover {
+  background-color: #696969;
+  color: #137DC5;
+  text-shadow: 5px 5px 10px black;
+  font-weight: bold;
+}
+
+
 .home-grid {
     display: grid;
     grid-template-columns: repeat(10, 10%);
