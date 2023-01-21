@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Origines</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div id="content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/logo-ift-final-medium.png" alt="IF TEACHING Logo">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projets</a>
+                <a href="origins.html">Origines</a>
+                <a href="site-plan.html">Plan du Site</a>
+                <a href="https://www.linkedin.com/in/ifievre/">Travaillons ensemble</a>
+            </nav>
+        </header>  
+        <main class="origins-grid">
+            <div class="text1">   
+                <h2>Mes origines</h2>
+                <p>
+                    J'ai la ferme conviction que mes ancêtres ont influencé par leur vie une partie de ma construction et par conséquent qui je suis.     </p>
+            </div> 
+            <img class="card-origins" src="images/genealogy.png" alt="part of my genealogy">
+            <div class="button22">
+                <button class="tablinks" onclick="openQuality(event, 'service')" >
+                    <img class="card-button" src="images/mother.png" alt="my mother">
+                    <br> Service et Créativité
+                </button>
+            </div>
+            <div class="span22">
+                <span class="tabcontent" id="service"> 
+                    <strong>Service et Créativité</strong><br><br>
+                    Ma mère était aide-soignante et travaillait auprès d'enfants malades à l'hôpital HRS de Giens quand elle était jeune adulte. Elle a cousu, tricoté et brodé et m'a appris à faire de même. J'ai aussi appris le crochet. J'ai eu l'occasion de servir les autres toute ma vie. Par exemple, quand j'étais jeune adulte, je crochetais des jouets pour les bébés d'un hôpital et des couvertures pour les bébés de familles dans le besoin. Ma mère a un grand sens de la créativité et elle me l'a transmis aussi. Je l'applique non seulement lorsque je fais de l'artisanat, mais aussi lorsque je crée un projet.    </span> 
+            </div>
+            <div class="button11">
+                <button class="tablinks" onclick="openQuality(event, 'adaptation')">
+                    <img class="card-button" src="images/rsz_les_alpes.png" alt="the Alpes">
+                    <br> Adaptation
+                </button>
+            </div>
+            <div class="span11">
+                <span class="tabcontent" id="adaptation" >
+                    <strong>Adaptation</strong><br><br>
+                    Mon arrière grand-père, Jean Baptiste Galliano, est venu du Piémont en Italie avec ses parents pour vivre en France. Après avoir déménagé plusieurs fois dans ma vie, je suis venu vivre dans le Piémont, il y a 10 ans. Je vois les montagnes tous les jours depuis ma fenêtre et je me souviens des adaptations de vie que mes ancêtres mères ont dû faire, y compris elle. Du côté de mon père, ma grand-mère, Valentine, était une enfant de l'assistance publique. Elle a aussi dû beaucoup s'adapter tout au long de sa vie d'enfant et de femme. Au cours de ma vie, j'ai appris à m'adapter aux situations et à mon environnement. En particulier, j'ai rencontré des gens du monde entier et j'ai travaillé avec des gens avec des façons différentes de penser et d'agir.     </span>
+            </div>               
+            <div class="button44">
+                <button class="tablinks" onclick="openQuality(event, 'self_learn')">
+                    <img class="card-button" src="images/my-father-with-me.png" alt="my father with me">
+                    <br> Self Learn
+                </button>
+            </div>    
+            <div class="span44">
+                <span class="tabcontent"  id="self_learn"> 
+                    <strong>Self Learn</strong><br><br>
+                    La mère de mon père, Valentine, a dû beaucoup apprendre dans sa vie de mère de nombreux enfants. Elle a aussi appris à conduire alors qu'elle était déjà très âgée pour rendre la vie plus joyeuse à son mari qui souffrait d'un gros handicap physique suite à un grave accident du travail.
+                     J'ai passé toute ma vie à apprendre, que ce soit en présentiel à l'école et à l'université, dans des livres ou en ligne. J'aime augmenter mes compétences pour réussir dans toutes mes activités. </span> 
+            </div>   
+            <script>
+                function openQuality(evt, qualityName) {
+                    // Declare all variables
+                    var i, tabcontent, tablinks;
+                
+                    // Get all elements with class="tabcontent" and hide them
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                    }
+                
+                    // Get all elements with class="tablinks" and remove the class "active"
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+                
+                    // Show the current tab, and add an "active" class to the button that opened the tab
+                    document.getElementById(qualityName).style.display = "block";
+                    evt.currentTarget.className += " active";
+                }
+
+            </script>           
+        </main>
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <a class="work" href="https://www.linkedin.com/in/ifievre/">Travaillons ensemble</a>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <footer>
+            <p>IF TEACHING &copy; 2022</p>
+            <p><a href="site-plan.html">Site Plan</a></p>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/ifievre/" target="_blank">
+                <img src="images/isa-in-l.png" alt="isa icon">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>    
+             
