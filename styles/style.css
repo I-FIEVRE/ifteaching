@@ -53,9 +53,38 @@ nav a:hover {
     font-weight: bold;
 }
 
-.langue {
+.dropdown button {
+  color: #fcfbfb;
+  font-size: medium;
+  margin: 10px;
+}
+
+.dropdown-content a {
+  text-decoration: none;
+  padding: 8px 12px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: inherit;
+  position: absolute;
+  width: 100px;
+  height: 60px;
+  overflow-y: auto;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.langue, .langue1, .langue2 {
   color: #f1f1f1;
-  font-size: large;
+  font-size: small;
   padding: 5px;
   margin: 5px;
   justify-self: center;
@@ -65,6 +94,20 @@ nav a:hover {
 .langue:hover {
   background-color: #696969;
   color: #137DC5;
+  text-shadow: 5px 5px 10px black;
+  font-weight: bold;
+}
+
+.langue1:hover {
+  background-color: #696969;
+  color: rgb(158, 12, 12);
+  text-shadow: 5px 5px 10px black;
+  font-weight: bold;
+}
+
+.langue2:hover {
+  background-color: #696969;
+  color: rgb(20, 126, 20);
   text-shadow: 5px 5px 10px black;
   font-weight: bold;
 }
