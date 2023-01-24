@@ -53,34 +53,7 @@ nav a:hover {
     font-weight: bold;
 }
 
-.dropdown button {
-  color: #fcfbfb;
-  font-size: medium;
-  margin: 10px;
-}
 
-.dropdown-content a {
-  text-decoration: none;
-  padding: 8px 12px;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: inherit;
-  position: absolute;
-  width: 100px;
-  height: 60px;
-  overflow-y: auto;
-  z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
 
 .langue, .langue1, .langue2 {
   color: #f1f1f1;
