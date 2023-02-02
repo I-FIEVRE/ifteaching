@@ -1,7 +1,7 @@
 
 //global empty array variable to store a list of quotes
 let listOfQuotes = [];
-//listOfQuotes = JSON.parse(quotess);
+
 //output accepts a list of quotes as an array argument and does the following for each quote:
 // - Creates an HTML <article> element
 // - Creates an HTML <h4> element and add the quote's quoteContent property to it
