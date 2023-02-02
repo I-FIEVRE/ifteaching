@@ -27,13 +27,29 @@
             </nav>
             
         </header>  
-        <main class="home-grid">
-            <img class="coeur" src="images/word-cloud-b.png" alt="word cloud">
-            <section class="msg-home">
-                <h2>Welcome!</h2>
-                <p>My name is Isabelle Fièvre. I build courses using technology that feeds the needs of learners and I make sure they move at their own pace. I also create transversal projects that generate team emulation with good practices. 
-                </p>
-            </section>
+        <main class="quote-grid">
+            <section class="msg-quotes">
+                <h2>Some of my favorite quotes</h2>
+                <p>I have faith in Jesus Christ and I would like to share this part of me too! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                <br>
+                <hr>
+                <br>
+                <p>
+                    Topics:
+                    <select id="filterBy">
+                        <option value="Nothing"></option>
+                        <option value="Unity">Unity</option>
+                        <option value="Peace">Peace</option>
+                        <option value="Love">Love</option>
+                        <option value="Positivity">Positivity</option>
+                        <option value="Work">Work</option>   
+                    </select>    
+                    <button id ="btnLoad">Load</button>
+                </p>    
+                <div id="filterQuotes">    
+                </div>    
+            </section> 
+            <script src="scripts/quotes.js"></script>
         </main>
         <footer>
             <p>IF TEACHING &copy; 2022</p>
@@ -44,6 +60,7 @@
             </div>
         </footer>
     </div>
+    
 </body>
 </html>    
              

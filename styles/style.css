@@ -472,9 +472,30 @@ button:hover {
   margin-bottom: 10px;
 }
 
+/* quotes */
 
+.quote-grid {
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  grid-template-columns: 20%, 60%, 20%;
+  grid-template-rows: 30%, 40%, 30%;
+}  
 
-
+.msg-quotes {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  margin-top: 150px;
+  margin-left: 200px;
+  margin-right: 200px;
+  border-radius: 10px 60px;
+  padding: 30px;
+  align-self: center;
+  text-align: left;
+  background-color: #696969;
+  border: 5px solid #137DC5;
+  /*font-size: medium;*/
+}
 
 /*don't write after this*/
 
@@ -589,6 +610,19 @@ button:hover {
   
     .dot {
       margin-top: 10px;
+    }
+
+    .msg-quotes {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      margin: 10px;
+      border-radius: 10px 60px;
+      padding: 10px;
+      align-self: center;
+      text-align: center;
+      background-color: #696969;
+      border: 5px solid #137DC5;
+      font-size: small;
     }
 
 }
