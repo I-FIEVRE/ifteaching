@@ -624,7 +624,7 @@ button:hover {
       padding: 10px;
       align-self: center;
       text-align: center;
-      background-color: #696969;
+      /*background-color: #696969;*/
       border: 5px solid #137DC5;
       font-size: small;
     }
