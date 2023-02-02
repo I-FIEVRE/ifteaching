@@ -68,29 +68,7 @@
                      J'ai passé toute ma vie à apprendre, que ce soit en présentiel à l'école et à l'université, dans des livres ou en ligne. J'aime augmenter mes compétences pour répondre efficacement aux besoins de ceux et celles que je sers. 
                 </span> 
             </div>   
-            <script>
-                function openQuality(evt, qualityName) {
-                    // Declare all variables
-                    var i, tabcontent, tablinks;
-                
-                    // Get all elements with class="tabcontent" and hide them
-                    tabcontent = document.getElementsByClassName("tabcontent");
-                    for (i = 0; i < tabcontent.length; i++) {
-                    tabcontent[i].style.display = "none";
-                    }
-                
-                    // Get all elements with class="tablinks" and remove the class "active"
-                    tablinks = document.getElementsByClassName("tablinks");
-                    for (i = 0; i < tablinks.length; i++) {
-                    tablinks[i].className = tablinks[i].className.replace(" active", "");
-                    }
-                
-                    // Show the current tab, and add an "active" class to the button that opened the tab
-                    document.getElementById(qualityName).style.display = "block";
-                    evt.currentTarget.className += " active";
-                }
-
-            </script>           
+            <script src="scripts/origins.js"></script>           
         </main>
         <div style="text-align:center">
             <span class="dot"></span>
