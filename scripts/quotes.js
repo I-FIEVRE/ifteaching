@@ -17,11 +17,11 @@ function output(listOfQuotes) {
 }
 
 //Create another function called getQuotes. Make it an async function.
-//In the function, using the built-in fetch method, call this absolute URL: 'https://raw.githubusercontent.com/I-FIEVRE/ifteaching/main/quotes.json'. Create a variable to hold the response from your fetch. You should have the program wait on this line until it finishes.
+//In the function, using the built-in fetch method, call this absolute URL: 'https://raw.githubusercontent.com/I-FIEVRE/ifteaching/main/scripts/quotes.json'. Create a variable to hold the response from your fetch. You should have the program wait on this line until it finishes.
 //Convert the fetch response into a Javascript object ( hint: .json() ). Store this in the quoteList variable you declared earlier (Step 1). Make sure the the execution of the code waits here as well until it finishes.
 //Finally, call the output function and pass it the list of quotes. Execute the getquotes function to make sure it works correctly.
 async function getQuotes(){
-    const response = await fetch('https://raw.githubusercontent.com/I-FIEVRE/ifteaching/main/quotes.json');
+    const response = await fetch('https://raw.githubusercontent.com/I-FIEVRE/ifteaching/main/scripts/quotes.json');
     if (response.ok) {
         listOfQuotes = await response.json();
         //output(listOfQuotes);
