@@ -159,7 +159,7 @@ p a {
 /* projects */
 
 
-  button {
+button {
   /*background-color: #696969;*/
   border-color: #696969;
   border-style: solid;
@@ -167,7 +167,7 @@ p a {
   padding: 5px;
   box-shadow: 5px 5px 5px #137DC5;
   font-size: mall;
-  }
+}
   
  /* .button1:hover, .button2:hover, .button3:hover, .button4:hover {
     opacity: .6;
@@ -185,7 +185,7 @@ button:hover {
     display: grid;
     grid-template-columns: repeat(12, 8%);
     justify-items: center;
-    grid-template-rows: 20% 20% 15% 10% 35%;
+    grid-template-rows: 20% 20% 15% 5% 30% 10%;
     margin-top: 50px;
     justify-content: center;
   }
@@ -246,48 +246,66 @@ button:hover {
     
   }
 
-  .button1 {
+.button1 {
     margin-top: 80px;
    grid-column: 3/5;
     grid-row: 3/4;
     transition: transform .5s;
-  }
+}
   
-  .button2 {
+.button2 {
     margin-top: 80px;
     grid-column: 5/7;
     grid-row: 3/4;
     transition: transform .5s;
-  }
+}
   
-  .button3 {
+.button3 {
     margin-top: 80px;
     grid-column: 7/9;
     grid-row: 3/4;
     transition: transform .5s;
-  }
+}
   
-  .button4 {
+.button4 {
     margin-top: 80px;
     grid-column: 9/11;
     grid-row: 3/4;
     transition: transform .5s;
-  }
+}
+
+.button5 {
+    margin-top: 80px;
+    grid-column: 11/12;
+    grid-row: 6/7;
+    transition: transform .5s;
+    font-size: xx-small; 
+    /*margin-bottom: 50px;*/
+}
 
 
-  .highschool, .middleschool1, .middleschool2, .individual {
+.clean {
+  text-align: center;
+  grid-column: 3/11; 
+  grid-row: 6/7;
+  margin-bottom: 40px;
+  color: #137DC5;
+  text-shadow: 5px 5px 10px black;
+}
+
+.highschool, .middleschool1, .middleschool2, .individual {
     text-align: left;
     margin-top: 80px;
     grid-column: 3/11; 
     grid-row: 4/6;
-  }
+}
 
-  .highschool, .middleschool1, .middleschool2, .individual {
+.highschool, .middleschool1, .middleschool2, .individual {
     padding: 20px;
     color: black;
    /* color: #fcfbfb;*/
     overflow: auto;
-  }
+}
 
   /* width */
 ::-webkit-scrollbar {
@@ -327,7 +345,7 @@ button:hover {
     text-align: center;
    /* color : #fcfbfb;*/
     border-radius: 6px;
-    text-decoration: underline;
+    text-decoration: none;
     padding: 35px;
   }
 
@@ -457,7 +475,20 @@ button:hover {
   grid-row: 3/4;
   transition: transform .5s;
 }
-.button11:hover, .button22:hover, .button44:hover {
+
+.button55 {
+  border-radius: 5px;
+  margin-top: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  justify-content: center;
+  grid-column: 8/9;
+  grid-row: 7/8;
+  transition: transform .5s;
+}
+
+.button11:hover, .button22:hover, .button44:hover, .button55:hover {
   transform: scale(1.5);
 }
 
