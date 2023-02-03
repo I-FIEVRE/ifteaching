@@ -617,6 +617,10 @@ button:hover {
       margin-top: 10px;
     }
 
+    .span1, .span2, .span3, .span4, .span11, .span22, .span44 {
+      font-size: 70%;
+    }
+
     .msg-quotes {
       grid-column: 2/3;
       grid-row: 2/3;
@@ -627,7 +631,7 @@ button:hover {
       text-align: center;
       /*background-color: #696969;*/
       border: 5px solid #137DC5;
-      font-size: small;
+      font-size: 70%;
     }
 
 }
