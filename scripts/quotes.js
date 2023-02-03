@@ -4,20 +4,16 @@ let listOfQuotes = [];
 let listeDeCitations = [];
 
 //output accepts a list of quotes as an array argument and does the following for each quote:
-// - Creates an HTML <article> element
 // - Creates an HTML <h4> element and add the quote's quoteContent property to it
 // - Creates an HTML <p> element and add the quote's author property, the quote's talkTitle property, and the quote's year property to it
-// - Appends the <h4> element, and the <p> element to the <article> element as children
-// - Appends the <article> element to the HTML element with an ID of fitlerQuotes
+// - Appends the element to the HTML element with an ID of filters
 function output(listQuotes, filters) {
     let element = document.getElementById(filters);
     //element.innerHTML = "";
-    listQuotes.forEach(quote => {element.innerHTML += `<article><h4>${quote.quoteContent}</h4>
-    <p>${quote.author} - ${quote.talkTitle} (${quote.year})</p></article>`    
+    listQuotes.forEach(quote => {element.innerHTML += `<h4>"${quote.quoteContent}"</h4>
+    <p>${quote.author} - ${quote.talkTitle} (${quote.year})</p>`    
     });
 }
-
-
 
 //getQuotes, async function:
 //- uses the built-in fetch method, call this absolute URL: 'https://raw.githubusercontent.com/I-FIEVRE/ifteaching/main/scripts/quotes.json'. 
@@ -34,7 +30,7 @@ getQuotes();
 
 //getCitations is french version fo getQuotes
 async function getCitations(){
-    const response = await fetch('https://raw.githubusercontent.com/I-FIEVRE/ifteaching/main/scripts/quotes.json');
+    const response = await fetch('https://raw.githubusercontent.com/I-FIEVRE/ifteaching/main/scripts/citations.json');
     if (response.ok) {
         listeDeCitations = await response.json();
     }
@@ -43,8 +39,9 @@ getCitations();
 
 //displayQuoteFilter does the following:
 // - filters the global quote list by the currently selected value of the HTML element with an ID of filterBy
+// - sorts the filtered list of quotes by year from most recent to least recent.
 // - Calls the output function passing in the filtered list of quotes named arrayForDisplay
-function displayQuoteFilter(listQuotes,filters) {
+function displayQuoteFilter(listQuotes, filters) {
     let element = document.getElementById(filters);
     let choice = document.getElementById("filterBy").value;
     element.innerHTML = "";
@@ -73,14 +70,24 @@ function displayQuoteFilter(listQuotes,filters) {
         output(arrayForDisplay, filters);
         
     }
+    arrayForDisplay.sort((quote1, quote2)=> {  
+        if (quote1.year > quote2.year)
+            return -1
+        else if (quote1.year < quote2.year)
+            return 1
+        else
+            return 0;
+    });
     output(arrayForDisplay, filters);
 }  
+
 function displayQ() {
     displayQuoteFilter(listOfQuotes, "filterQuotes");
 }; 
 function displayC() {
     displayQuoteFilter(listeDeCitations, "filterCitations");
 };
+
 document.getElementById("btnLoad").addEventListener('click', displayQ);
 document.getElementById("btnLoad").addEventListener('click', displayC);
 
