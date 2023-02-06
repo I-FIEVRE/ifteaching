@@ -3,16 +3,14 @@
 let listOfQuotes = [];
 let listeDeCitations = [];
 
-//output accepts a list of quotes as an array argument and does the following for each quote:
+//output accepts a list of quotes as an array argument, and filters as an id argument, and does the following for each quote:
 // - Creates an HTML <h4> element and add the quote's quoteContent property to it
 // - Creates an HTML <p> element and add the quote's author property, the quote's talkTitle property, and the quote's year property to it
 // - Appends the element to the HTML element with an ID of filters
 function output(listQuotes, filters) {
     let element = document.getElementById(filters);
-    //element.innerHTML = "";
-    listQuotes.forEach(quote => {element.innerHTML += `<h4>"${quote.quoteContent}"</h4>
-    <p>${quote.author} - ${quote.talkTitle} (${quote.year})</p>`    
-    });
+    element.innerHTML = "";
+    listQuotes.forEach(quote => {element.innerHTML += `<h4>"${quote.quoteContent}"</h4><p>${quote.author} - ${quote.talkTitle} (${quote.year})</p>`;});
 }
 
 //getQuotes, async function:
@@ -37,7 +35,7 @@ async function getCitations(){
 }
 getCitations();
 
-//displayQuoteFilter does the following:
+//displayQuoteFilter accepts a list of quotes as an array argument, and filters as an id argument, does the following:
 // - filters the global quote list by the currently selected value of the HTML element with an ID of filterBy
 // - sorts the filtered list of quotes by year from most recent to least recent.
 // - Calls the output function passing in the filtered list of quotes named arrayForDisplay
@@ -72,9 +70,9 @@ function displayQuoteFilter(listQuotes, filters) {
     }
     arrayForDisplay.sort((quote1, quote2)=> {  
         if (quote1.year > quote2.year)
-            return -1
+            return -1;
         else if (quote1.year < quote2.year)
-            return 1
+            return 1;
         else
             return 0;
     });
@@ -83,10 +81,10 @@ function displayQuoteFilter(listQuotes, filters) {
 
 function displayQ() {
     displayQuoteFilter(listOfQuotes, "filterQuotes");
-}; 
+}
 function displayC() {
     displayQuoteFilter(listeDeCitations, "filterCitations");
-};
+}
 
 document.getElementById("btnLoad").addEventListener('click', displayQ);
 document.getElementById("btnLoad").addEventListener('click', displayC);
