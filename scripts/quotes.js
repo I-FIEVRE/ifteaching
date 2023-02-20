@@ -10,7 +10,7 @@ let listeDeCitations = [];
 function output(listQuotes, filters) {
     let element = document.getElementById(filters);
     element.innerHTML = "";
-    listQuotes.forEach(quote => {element.innerHTML += `<h4>"${quote.quoteContent}"</h4><p>${quote.author} - ${quote.talkTitle} (${quote.year})</p>`;});
+    listQuotes.forEach(quote => {element.innerHTML += `<h4>"${quote.quoteContent}"</h4><p>By <strong>${quote.author}</strong> - "${quote.talkTitle}" (${quote.year})</p>`;});
 }
 
 //getQuotes, async function:
