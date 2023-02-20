@@ -56,6 +56,10 @@ function displayQuoteFilter(listQuotes, filters) {
         arrayForDisplay = listQuotes.filter((quote) => {
             return quote.topic == "Love";
         });     
+    } else if (choice == "Jesus") {
+        arrayForDisplay = listQuotes.filter((quote) => {
+            return quote.topic == "Jesus";
+        });     
     } else if (choice == "Positivity") {
         arrayForDisplay = listQuotes.filter((quote) => {
             return quote.topic == "Positivity";
