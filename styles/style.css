@@ -119,6 +119,10 @@ nav a:hover {
     font-size: medium;
 }
 
+.msg-home h2{
+  color: #444444;
+}
+
 .msg-home:hover, footer .social img:hover {
     opacity: .6;
     transform: scale(1.1);
@@ -132,6 +136,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     border-top: 2px solid #137DC5;
+    font-size: medium;
 }
 
 footer a {
@@ -249,6 +254,7 @@ button:hover {
 
   .text h2 {
     margin-top: 50px;
+    color: #444444;
     
   }
 
@@ -337,24 +343,43 @@ button:hover {
 }
 
 
-  .dot {
-    height: 25px;
-    width: 25px;
-    margin-top: 150px;
-   /*background-color: #137DC5;*/
-    border:2px solid #137DC5;
-    border-radius: 50%;
-    display: inline-block;
-  }
+.dot {
+  height: 25px;
+  width: 25px;
+  margin-top: 150px;
+  background-color: #137DC5;
+  border:2px solid #444444;
+  border-radius: 50%;
+  display: inline-block;
+}
 
-  .work {
-    display: inline-block;
-    text-align: center;
-   /* color : #fcfbfb;*/
-    border-radius: 6px;
-    text-decoration: none;
-    padding: 35px;
-  }
+.dot1 {
+  height: 25px;
+  width: 25px;
+  margin-top: 150px;
+  background-color: #696969;
+  border:2px solid #444444;
+  border-radius: 50%;
+  display: inline-block;
+  
+}
+
+/*.coeur1 img{
+  height: 100px;
+  width: 100px;
+  margin-top: 20px;
+}*/
+
+
+.work {
+  display: inline-block;
+  text-align: center;
+  color : #444444;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+  padding: 35px;
+}
 
   .work:hover {
     /*background-color: #696969;*/
@@ -420,6 +445,7 @@ button:hover {
 .text1 h2 {
   margin-top: 30px;
   text-align: left; 
+  color: #444444;
 }
 
 .text1 {
@@ -544,6 +570,9 @@ button:hover {
   /*background-color: #696969;*/
   border: 5px solid #137DC5;
   font-size: medium;
+}
+.msg-quotes h2{
+  color: #444444;
 }
 
 /*don't write after this*/
