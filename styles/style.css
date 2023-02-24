@@ -19,7 +19,7 @@ h2 {
 
 nav a {
     text-align: center;
-    /*color : #fcfbfb;*/
+    color : #137DC5;
     text-decoration: none;
     padding: 35px;
     margin-top: 10px;
@@ -116,6 +116,7 @@ nav a:hover {
     border: 5px solid #137DC5;
     transition: transform .5s;
     box-shadow: 5px 5px 5px #696969;
+    font-size: medium;
 }
 
 .msg-home:hover, footer .social img:hover {
@@ -226,12 +227,17 @@ button:hover {
     text-align: center;
     align-self: center;
    /* background-color: #696969;*/
-    border-top-left-radius: 10px;
+   /* border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-right-radius: 10px;*/
     padding: 10px;
     color: black;
+    border-radius: 10px 60px;
+    border: 5px solid #137DC5;
+    transition: transform .5s;
+    box-shadow: 5px 5px 5px #696969;
+    font-size: medium;
   }
 
   .text{
@@ -304,7 +310,8 @@ button:hover {
     padding: 20px;
     color: black;
    /* color: #fcfbfb;*/
-    overflow: auto;
+   /* overflow: auto;*/
+    font-size: medium;
 }
 
   /* width */
@@ -390,13 +397,18 @@ button:hover {
   justify-content: center;
   align-content: center;
  /* background-color: #696969;*/
-  border-top-left-radius: 10px;
+  /*border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  border-color: #444444;
+  border-color: #444444;*/
   padding-left: 50px;
   padding-right: 350px;
+  font-size: medium;
+  border: 5px solid #137DC5;
+  border-radius: 10px 60px;
+  transition: transform .5s;
+  box-shadow: 5px 5px 5px #696969;
 }
 
 .text1{
@@ -497,15 +509,16 @@ button:hover {
   text-align: left;
   margin-top: 100px;
   grid-column: 2/9;
-  grid-row: 5/7; 
+  grid-row: 5/8; 
 }
 
 .span11, .span22, .span44 {
   padding-left: 10px;
   padding-right: 10px;
   /*color: #fcfbfb;*/
-  overflow: auto;
+  /*overflow: auto;*/
   margin-bottom: 10px;
+  font-size: medium;
 }
 
 /* quotes */
