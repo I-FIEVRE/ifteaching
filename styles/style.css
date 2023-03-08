@@ -528,6 +528,75 @@ button:hover {
   color: #444444;
 }
 
+/*Trips*/
+
+.trip{
+  max-width: 1600px;
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.text2 {
+  height: 150px;
+  align-self: center;
+  justify-content: center;
+  align-content: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  font-size: medium;
+  border: 5px solid #137DC5;
+  border-radius: 10px 60px;
+  transition: transform .5s;
+  box-shadow: 5px 5px 5px #696969;
+}
+
+.text2 h2 {
+  margin-top: 30px;
+  text-align: center; 
+  color: #444444;
+}
+
+.text2 {
+  text-align: center;
+}
+
+
+.row {
+  margin: 12px -24px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 45px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+
+
 /*don't write after this*/
 
 @media screen and (max-width: 900px) {
@@ -664,5 +733,16 @@ button:hover {
       font-size: 70%;
     }
 
+    .column {
+      width: 50%;
+    }
+
+    .text2{
+      margin: 10px;
+    }
+
+    .trip{
+      align-self: center;
+    }
 }
 
