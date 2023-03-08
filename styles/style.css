@@ -6,7 +6,6 @@
 }
 
 body {
-    /*background-color: #444444;*/
     font-family: 'Almarai', arial, sans-serif;
     font-size: 22px;
     margin: 0;
@@ -28,7 +27,6 @@ nav a {
 header {
     display: grid;
     grid-template-columns: 150px auto;
-    /*background-color: #444444;*/
     border-bottom: 2px solid #137DC5;
 }
 
@@ -43,12 +41,9 @@ nav {
     padding-top: 5px;
     justify-self: center;
     align-self: center;
-    
-
 }
 
 nav a:hover {
-   /* background-color: #696969;*/
     color: #137DC5;
     text-shadow: 5px 5px 10px black;
     font-weight: bold;
@@ -57,7 +52,6 @@ nav a:hover {
 
 
 .langue, .langue1, .langue2 {
-  /*color: #f1f1f1;*/
   font-size: small;
   padding: 5px;
   margin: 5px;
@@ -66,32 +60,34 @@ nav a:hover {
 }
 
 .langue:hover {
- /* background-color: #696969;*/
   color: #137DC5;
   text-shadow: 5px 5px 10px black;
   font-weight: bold;
 }
 
 .langue1:hover {
- /* background-color: #696969;*/
   color: rgb(158, 12, 12);
   text-shadow: 5px 5px 10px black;
   font-weight: bold;
 }
 
 .langue2:hover {
-  /*background-color: #696969;*/
   color: rgb(20, 126, 20);
   text-shadow: 5px 5px 10px black;
   font-weight: bold;
 }
 
 
+.vertical-menu a {
+  color: black;
+  display: block;
+  text-decoration: none;
+}
+
 .home-grid {
     display: grid;
     grid-template-columns: repeat(10, 10%);
 }
-
 
 .coeur {
     width: 100%;
@@ -112,7 +108,6 @@ nav a:hover {
     padding-right: 15px;
     align-self: center;
     text-align: center;
-    /*background-color: #696969;*/
     border: 5px solid #137DC5;
     transition: transform .5s;
     box-shadow: 5px 5px 5px #696969;
@@ -129,7 +124,6 @@ nav a:hover {
 }
 
 footer {
-   /* color: #fcfbfb;*/
     padding: 25px 50px;
     margin-top: 200px;
     display: flex;
@@ -141,12 +135,7 @@ footer {
 
 footer a {
     text-decoration: none;
-    /*color: #fcfbfb;*/
 }
-
-/*footer {
-    font-size: 1.2em;
-}*/
 
 footer a:hover {
     text-decoration: underline;
@@ -166,7 +155,6 @@ p a {
 
 
 button {
-  /*background-color: #696969;*/
   border-color: #696969;
   border-style: solid;
   border-radius: 10px;
@@ -174,41 +162,34 @@ button {
   box-shadow: 5px 5px 5px #137DC5;
   font-size: mall;
 }
-  
- /* .button1:hover, .button2:hover, .button3:hover, .button4:hover {
-    opacity: .6;
-   transform: scale(1.1);
-}*/
 
 button:hover {
- /* background-color: #444444;*/
-  /*color: #fcfbfb;*/
   border: none;
   box-shadow: none;
 }
 
-  .project-grid {
-    display: grid;
-    grid-template-columns: repeat(12, 8%);
-    justify-items: center;
-    grid-template-rows: 20% 20% 15% 5% 30% 10%;
-    margin-top: 50px;
-    justify-content: center;
-  }
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 8%);
+  justify-items: center;
+  grid-template-rows: 20% 20% 15% 5% 30% 10%;
+  margin-top: 50px;
+  justify-content: center;
+}
   
-  .card1-project {
-    grid-column: 4/5;
-    grid-row: 1/2;
-    z-index: 1; 
-    align-self: end;
-  }
+.card1-project {
+  grid-column: 4/5;
+  grid-row: 1/2;
+  z-index: 1; 
+  align-self: end;
+}
 
-  .card2-project {
-    grid-column: 9/10;
-    grid-row: 2/3;
-    z-index: 1;
-    align-self: start;
-  }
+.card2-project {
+  grid-column: 9/10;
+  grid-row: 2/3;
+  z-index: 1;
+  align-self: start;
+}
 
   .card1-project, .card2-project {
     border: 2px solid #444444;
@@ -226,16 +207,11 @@ button:hover {
     border: none;
   }
 
-   .text {
+  .text {
     height: 200px;
     width: 100%;
     text-align: center;
     align-self: center;
-   /* background-color: #696969;*/
-   /* border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;*/
     padding: 10px;
     color: black;
     border-radius: 10px 60px;
@@ -254,13 +230,12 @@ button:hover {
 
   .text h2 {
     margin-top: 50px;
-    color: #444444;
-    
+    color: #444444;  
   }
 
 .button1 {
     margin-top: 80px;
-   grid-column: 3/5;
+    grid-column: 3/5;
     grid-row: 3/4;
     transition: transform .5s;
 }
@@ -315,8 +290,6 @@ button:hover {
 .highschool, .middleschool1, .middleschool2, .individual {
     padding: 20px;
     color: black;
-   /* color: #fcfbfb;*/
-   /* overflow: auto;*/
     font-size: medium;
 }
 
@@ -347,7 +320,6 @@ button:hover {
   height: 15px;
   width: 15px;
   margin-top: 150px;
-  /*background-color: #137DC5;*/
   border:2px solid #137DC5;
   border-radius: 50%;
   display: inline-block;
@@ -357,19 +329,11 @@ button:hover {
   height: 15px;
   width: 15px;
   margin-top: 150px;
-  /*background-color: #696969;*/
   border:2px solid #696969;
   border-radius: 50%;
   display: inline-block;
   
 }
-
-/*.coeur1 img{
-  height: 100px;
-  width: 100px;
-  margin-top: 20px;
-}*/
-
 
 .work {
   display: inline-block;
@@ -381,18 +345,14 @@ button:hover {
   padding: 35px;
 }
 
-  .work:hover {
-    /*background-color: #696969;*/
+.work:hover {
     margin: 20px;
     color: #137DC5;
     text-shadow: 5px 5px 10px black;
     font-weight: bold;
-  }
+}
 
-
-/* Style the tab content */
 .tabcontent {
- /* color: #f1f1f1;*/
   display: none;
   padding: 6px 12px;
   border: 1px solid #696969;
@@ -421,12 +381,6 @@ button:hover {
   align-self: center;
   justify-content: center;
   align-content: center;
- /* background-color: #696969;*/
-  /*border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-color: #444444;*/
   padding-left: 50px;
   padding-right: 350px;
   font-size: medium;
@@ -530,7 +484,6 @@ button:hover {
   transform: scale(1.5);
 }
 
-
 .span11, .span22, .span44 {
   text-align: left;
   margin-top: 100px;
@@ -578,27 +531,33 @@ button:hover {
 /*don't write after this*/
 
 @media screen and (max-width: 900px) {
+
     .home-grid {
         display: block;
         height: auto;
     }
+
     nav, footer {
         flex-direction: column;
     }
-    nav a {
+
+    nav a, .vertical-menu {
         display: block;
-        padding: 15px;
+        padding-left: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 15px;
     }
-   
+
     .project-grid {
       display: block;
       height: auto;
-  }
+    }
 
     .origins-grid {
       display: block;
       height: auto;
-  }
+    }
 
     .msg-home {
       margin-top: 20px;
@@ -658,7 +617,6 @@ button:hover {
       transform: scale(1.1);
     }
     
-
     .card-button {
       width: 80%;
       align-self: center;
@@ -702,7 +660,6 @@ button:hover {
       padding: 10px;
       align-self: center;
       text-align: center;
-      /*background-color: #696969;*/
       border: 5px solid #137DC5;
       font-size: 70%;
     }
