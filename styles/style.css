@@ -173,7 +173,7 @@ button:hover {
   grid-template-columns: repeat(12, 8%);
   justify-items: center;
   grid-template-rows: 20% 20% 15% 5% 30% 10%;
-  margin-top: 70px;
+  margin-top: 100px;
   justify-content: center;
 }
   
@@ -360,9 +360,6 @@ button:hover {
 
 
 
-
-
-
 /*origins*/
  
 
@@ -526,6 +523,7 @@ button:hover {
     font-weight: bold;
 }
 
+
 /* quotes */
 
 .quote-grid {
@@ -546,7 +544,6 @@ button:hover {
   padding: 30px;
   align-self: center;
   text-align: left;
-  /*background-color: #696969;*/
   border: 5px solid #137DC5;
   font-size: medium;
 }
@@ -573,7 +570,7 @@ button:hover {
   margin-left: 300px;
   margin-right: 300px;
   margin-bottom: 50px;
-  margin-top: 50px;
+  margin-top: 100px;
   font-size: medium;
   border: 5px solid #137DC5;
   border-radius: 10px 60px;
@@ -590,7 +587,6 @@ button:hover {
 .text2 {
   text-align: center;
 }
-
 
 .row {
   margin: 12px -24px;
