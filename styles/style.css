@@ -506,6 +506,22 @@ button:hover {
   display: inline-block;
 }
 
+.dot3 {
+  height: 15px;
+  width: 15px;
+  margin-top: 20px;
+  border:2px solid #696969;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot4 {
+  height: 15px;
+  width: 15px;
+  margin-top: 20px;
+  border:2px solid #db2c2c;
+  border-radius: 50%;
+  display: inline-block;
+}
 .genealogy {
   display: inline-block;
   text-align: center;
@@ -523,6 +539,22 @@ button:hover {
     font-weight: bold;
 }
 
+.simone {
+  display: inline-block;
+  text-align: center;
+  color : #444444;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+  padding: 35px;
+}
+
+.simone:hover {
+  margin: 20px;
+  color: #db2c2c;
+  text-shadow: 5px 5px 10px black;
+  font-weight: bold;
+}
 
 /* quotes */
 
